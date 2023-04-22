@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD94BF2029F2BB2600DE6C97 /* GPT4_B_LogicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF1F29F2BB2600DE6C97 /* GPT4_B_LogicApp.swift */; };
+		BD94BF2429F2BB2800DE6C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD94BF2329F2BB2800DE6C97 /* Assets.xcassets */; };
+		BD94BF2729F2BB2800DE6C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD94BF2629F2BB2800DE6C97 /* Preview Assets.xcassets */; };
+		BD94BF3129F2BC6B00DE6C97 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF3029F2BC6B00DE6C97 /* LandingPage.swift */; };
+		BD94BF3329F2BC7C00DE6C97 /* RepositoriesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF3229F2BC7C00DE6C97 /* RepositoriesPage.swift */; };
+		BD94BF3629F2BFB300DE6C97 /* GPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF3529F2BFB300DE6C97 /* GPT.swift */; };
+		BD94BF3C29F2C61600DE6C97 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD94BF3B29F2C61600DE6C97 /* OpenAIKit */; };
+		BD94BF3F29F2C69600DE6C97 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = BD94BF3E29F2C69600DE6C97 /* NIO */; };
+		BD94BF4229F2CAC500DE6C97 /* GPTOpenPageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4129F2CAC500DE6C97 /* GPTOpenPageAction.swift */; };
+		BD94BF4429F2CACD00DE6C97 /* GPTApiCallAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4329F2CACD00DE6C97 /* GPTApiCallAction.swift */; };
+		BD94BF4629F2CAEC00DE6C97 /* GPTClosePageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4529F2CAEC00DE6C97 /* GPTClosePageAction.swift */; };
+		BD94BF4A29F2CB0D00DE6C97 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4929F2CB0D00DE6C97 /* AppState.swift */; };
+		BD94BF4C29F2CB4B00DE6C97 /* AppUserInterationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4B29F2CB4B00DE6C97 /* AppUserInterationEvent.swift */; };
+		BD94BF4E29F2CB5600DE6C97 /* AppApiCallResponseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4D29F2CB5600DE6C97 /* AppApiCallResponseEvent.swift */; };
+		BD94BF5029F2CC6C00DE6C97 /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF4F29F2CC6C00DE6C97 /* AppEvent.swift */; };
+		BD94BF5329F2CD5400DE6C97 /* GPTAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF5229F2CD5400DE6C97 /* GPTAction.swift */; };
+		BD94BF5529F2F84000DE6C97 /* LoadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF5429F2F84000DE6C97 /* LoadingPage.swift */; };
+		BD94BF5729F3233F00DE6C97 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF5629F3233F00DE6C97 /* AppSpec.swift */; };
+		BD94BF5929F3388000DE6C97 /* AlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94BF5829F3388000DE6C97 /* AlertPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD94BF1C29F2BB2600DE6C97 /* GPT4-B-Logic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPT4-B-Logic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD94BF1F29F2BB2600DE6C97 /* GPT4_B_LogicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT4_B_LogicApp.swift; sourceTree = "<group>"; };
+		BD94BF2329F2BB2800DE6C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD94BF2629F2BB2800DE6C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD94BF3029F2BC6B00DE6C97 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		BD94BF3229F2BC7C00DE6C97 /* RepositoriesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPage.swift; sourceTree = "<group>"; };
+		BD94BF3529F2BFB300DE6C97 /* GPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT.swift; sourceTree = "<group>"; };
+		BD94BF4129F2CAC500DE6C97 /* GPTOpenPageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTOpenPageAction.swift; sourceTree = "<group>"; };
+		BD94BF4329F2CACD00DE6C97 /* GPTApiCallAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTApiCallAction.swift; sourceTree = "<group>"; };
+		BD94BF4529F2CAEC00DE6C97 /* GPTClosePageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTClosePageAction.swift; sourceTree = "<group>"; };
+		BD94BF4929F2CB0D00DE6C97 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BD94BF4B29F2CB4B00DE6C97 /* AppUserInterationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserInterationEvent.swift; sourceTree = "<group>"; };
+		BD94BF4D29F2CB5600DE6C97 /* AppApiCallResponseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApiCallResponseEvent.swift; sourceTree = "<group>"; };
+		BD94BF4F29F2CC6C00DE6C97 /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
+		BD94BF5229F2CD5400DE6C97 /* GPTAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAction.swift; sourceTree = "<group>"; };
+		BD94BF5429F2F84000DE6C97 /* LoadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPage.swift; sourceTree = "<group>"; };
+		BD94BF5629F3233F00DE6C97 /* AppSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpec.swift; sourceTree = "<group>"; };
+		BD94BF5829F3388000DE6C97 /* AlertPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD94BF1929F2BB2600DE6C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94BF3C29F2C61600DE6C97 /* OpenAIKit in Frameworks */,
+				BD94BF3F29F2C69600DE6C97 /* NIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD94BF1329F2BB2600DE6C97 = {
+			isa = PBXGroup;
+			children = (
+				BD94BF1E29F2BB2600DE6C97 /* GPT4-B-Logic */,
+				BD94BF1D29F2BB2600DE6C97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD94BF1D29F2BB2600DE6C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF1C29F2BB2600DE6C97 /* GPT4-B-Logic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD94BF1E29F2BB2600DE6C97 /* GPT4-B-Logic */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF5129F2CD2200DE6C97 /* Events */,
+				BD94BF4029F2CAB700DE6C97 /* Actions */,
+				BD94BF3429F2BFA600DE6C97 /* Services */,
+				BD94BF2D29F2BC2000DE6C97 /* Pages */,
+				BD94BF1F29F2BB2600DE6C97 /* GPT4_B_LogicApp.swift */,
+				BD94BF2329F2BB2800DE6C97 /* Assets.xcassets */,
+				BD94BF2529F2BB2800DE6C97 /* Preview Content */,
+				BD94BF4929F2CB0D00DE6C97 /* AppState.swift */,
+				BD94BF5629F3233F00DE6C97 /* AppSpec.swift */,
+			);
+			path = "GPT4-B-Logic";
+			sourceTree = "<group>";
+		};
+		BD94BF2529F2BB2800DE6C97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF2629F2BB2800DE6C97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD94BF2D29F2BC2000DE6C97 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF3029F2BC6B00DE6C97 /* LandingPage.swift */,
+				BD94BF3229F2BC7C00DE6C97 /* RepositoriesPage.swift */,
+				BD94BF5429F2F84000DE6C97 /* LoadingPage.swift */,
+				BD94BF5829F3388000DE6C97 /* AlertPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		BD94BF3429F2BFA600DE6C97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF3529F2BFB300DE6C97 /* GPT.swift */,
+				BD94BF4F29F2CC6C00DE6C97 /* AppEvent.swift */,
+				BD94BF5229F2CD5400DE6C97 /* GPTAction.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD94BF4029F2CAB700DE6C97 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF4129F2CAC500DE6C97 /* GPTOpenPageAction.swift */,
+				BD94BF4329F2CACD00DE6C97 /* GPTApiCallAction.swift */,
+				BD94BF4529F2CAEC00DE6C97 /* GPTClosePageAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		BD94BF5129F2CD2200DE6C97 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				BD94BF4B29F2CB4B00DE6C97 /* AppUserInterationEvent.swift */,
+				BD94BF4D29F2CB5600DE6C97 /* AppApiCallResponseEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD94BF1B29F2BB2600DE6C97 /* GPT4-B-Logic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD94BF2A29F2BB2800DE6C97 /* Build configuration list for PBXNativeTarget "GPT4-B-Logic" */;
+			buildPhases = (
+				BD94BF1829F2BB2600DE6C97 /* Sources */,
+				BD94BF1929F2BB2600DE6C97 /* Frameworks */,
+				BD94BF1A29F2BB2600DE6C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPT4-B-Logic";
+			packageProductDependencies = (
+				BD94BF3B29F2C61600DE6C97 /* OpenAIKit */,
+				BD94BF3E29F2C69600DE6C97 /* NIO */,
+			);
+			productName = "GPT4-B-Logic";
+			productReference = BD94BF1C29F2BB2600DE6C97 /* GPT4-B-Logic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD94BF1429F2BB2600DE6C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BD94BF1B29F2BB2600DE6C97 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BD94BF1729F2BB2600DE6C97 /* Build configuration list for PBXProject "GPT4-B-Logic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD94BF1329F2BB2600DE6C97;
+			packageReferences = (
+				BD94BF3A29F2C61600DE6C97 /* XCRemoteSwiftPackageReference "openai-kit" */,
+				BD94BF3D29F2C69600DE6C97 /* XCRemoteSwiftPackageReference "swift-nio" */,
+			);
+			productRefGroup = BD94BF1D29F2BB2600DE6C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD94BF1B29F2BB2600DE6C97 /* GPT4-B-Logic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD94BF1A29F2BB2600DE6C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94BF2729F2BB2800DE6C97 /* Preview Assets.xcassets in Resources */,
+				BD94BF2429F2BB2800DE6C97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD94BF1829F2BB2600DE6C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94BF5929F3388000DE6C97 /* AlertPage.swift in Sources */,
+				BD94BF5329F2CD5400DE6C97 /* GPTAction.swift in Sources */,
+				BD94BF5529F2F84000DE6C97 /* LoadingPage.swift in Sources */,
+				BD94BF4E29F2CB5600DE6C97 /* AppApiCallResponseEvent.swift in Sources */,
+				BD94BF4C29F2CB4B00DE6C97 /* AppUserInterationEvent.swift in Sources */,
+				BD94BF5729F3233F00DE6C97 /* AppSpec.swift in Sources */,
+				BD94BF3629F2BFB300DE6C97 /* GPT.swift in Sources */,
+				BD94BF3329F2BC7C00DE6C97 /* RepositoriesPage.swift in Sources */,
+				BD94BF4A29F2CB0D00DE6C97 /* AppState.swift in Sources */,
+				BD94BF3129F2BC6B00DE6C97 /* LandingPage.swift in Sources */,
+				BD94BF4229F2CAC500DE6C97 /* GPTOpenPageAction.swift in Sources */,
+				BD94BF5029F2CC6C00DE6C97 /* AppEvent.swift in Sources */,
+				BD94BF4429F2CACD00DE6C97 /* GPTApiCallAction.swift in Sources */,
+				BD94BF4629F2CAEC00DE6C97 /* GPTClosePageAction.swift in Sources */,
+				BD94BF2029F2BB2600DE6C97 /* GPT4_B_LogicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BD94BF2829F2BB2800DE6C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD94BF2929F2BB2800DE6C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD94BF2B29F2BB2800DE6C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPT4-B-Logic/Preview Content\"";
+				DEVELOPMENT_TEAM = X46BWV4563;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "digital.zaitsev.GPT4-B-Logic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD94BF2C29F2BB2800DE6C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPT4-B-Logic/Preview Content\"";
+				DEVELOPMENT_TEAM = X46BWV4563;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "digital.zaitsev.GPT4-B-Logic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD94BF1729F2BB2600DE6C97 /* Build configuration list for PBXProject "GPT4-B-Logic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD94BF2829F2BB2800DE6C97 /* Debug */,
+				BD94BF2929F2BB2800DE6C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD94BF2A29F2BB2800DE6C97 /* Build configuration list for PBXNativeTarget "GPT4-B-Logic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD94BF2B29F2BB2800DE6C97 /* Debug */,
+				BD94BF2C29F2BB2800DE6C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD94BF3A29F2C61600DE6C97 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BD94BF3D29F2C69600DE6C97 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD94BF3B29F2C61600DE6C97 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD94BF3A29F2C61600DE6C97 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+		BD94BF3E29F2C69600DE6C97 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD94BF3D29F2C69600DE6C97 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD94BF1429F2BB2600DE6C97 /* Project object */;
+}
