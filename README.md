@@ -1,6 +1,8 @@
 # GPT3-B-Logic
 Use GPT 3.5-turbo as runtime business logic for iOS app
 
+p.s. version was downgraded from GPT 4 to GPT 3.5-turbo
+
 Example video:
 https://user-images.githubusercontent.com/104061716/233751103-ccc82a5b-b6ff-497f-acb5-033452fc40df.mp4
 
