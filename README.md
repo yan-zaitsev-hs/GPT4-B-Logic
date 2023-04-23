@@ -3,10 +3,6 @@ Use GPT 3.5-turbo as runtime business logic for iOS app
 
 p.s. version was downgraded from GPT 4 to GPT 3.5-turbo
 
-Example video (v1), please be patient. GPT api takes 5-25sec to generate a response:
-
-https://user-images.githubusercontent.com/104061716/233751103-ccc82a5b-b6ff-497f-acb5-033452fc40df.mp4
-
 Example video (v3) - includes Sun/Moon question and loading info panel:
 
 
