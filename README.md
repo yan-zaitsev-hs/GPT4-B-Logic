@@ -4,7 +4,15 @@ Use GPT 3.5-turbo as runtime business logic for iOS app
 p.s. version was downgraded from GPT 4 to GPT 3.5-turbo
 
 Example video (v1), please be patient. GPT api takes 5-25sec to generate a response:
+
 https://user-images.githubusercontent.com/104061716/233751103-ccc82a5b-b6ff-497f-acb5-033452fc40df.mp4
+
+Example video (v3) - includes Sun/Moon question and loading info panel:
+
+
+https://user-images.githubusercontent.com/104061716/233866044-e79d4cb4-3d73-4951-965d-7545311686aa.mp4
+
+
 
 Native iOS application uses GPT3.5-turbo as business logic engine. 
 All navigation rules are specified in English in `AppSpec.swift`
@@ -17,10 +25,14 @@ GPT had a problem to close correct page sometimes. The complete generated promt 
 
 The example what GPT is able to do is here. I put the following requirement in to the spec (v2):
 ```
-* When user click on \(LandingPage.searchButton.identifier) to open the list of repositories ask the user what is the name of Earth's star using \(AlertPage.name) page. Propose two answers as titles for \(AlertPage.defaultButton.identifier) and \(AlertPage.cancelButton.identifier) buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error.
+
+When user click on \(LandingPage.searchButton.identifier) to open the list of repositories ask the user what is the name of Earth's star using \(AlertPage.name) page. Propose two answers as titles for \(AlertPage.defaultButton.identifier) and \(AlertPage.cancelButton.identifier) buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error. Don't load list of repositoried until user answer the question!
+
 ```
 And there is a video on how it is working: 
+
 https://user-images.githubusercontent.com/104061716/233860415-d64413a7-a7ab-4361-a1d9-9ac67845d7d6.mp4
+
 I did not code any string, questions or logic in the app. The only thing is `AppSpec.swift` promt.
 
 There is an example of commnunication:
