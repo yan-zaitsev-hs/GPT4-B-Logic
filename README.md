@@ -10,6 +10,14 @@ https://user-images.githubusercontent.com/104061716/233866044-e79d4cb4-3d73-4951
 
 
 
+https://user-images.githubusercontent.com/104061716/233866946-bea2b501-5e9e-40f1-ad71-51df2798c490.mp4
+
+
+
+https://user-images.githubusercontent.com/104061716/233866947-c3b5b68b-3338-47bf-afbb-f599527bed86.mp4
+
+
+
 Native iOS application uses GPT3.5-turbo as business logic engine. 
 All navigation rules are specified in English in `AppSpec.swift`
 
