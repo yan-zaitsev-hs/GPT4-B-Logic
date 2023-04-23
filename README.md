@@ -3,7 +3,7 @@ Use GPT 3.5-turbo as runtime business logic for iOS app
 
 p.s. version was downgraded from GPT 4 to GPT 3.5-turbo
 
-Example video:
+Example video (v1):
 https://user-images.githubusercontent.com/104061716/233751103-ccc82a5b-b6ff-497f-acb5-033452fc40df.mp4
 
 Native iOS application uses GPT3.5-turbo as business logic engine. 
@@ -14,6 +14,14 @@ GPT was able to understand app events (user interactions & api responses).
 GPT automatically generated error message when api call failed.
 
 GPT had a problem to close correct page sometimes. The complete generated promt of app is at the end of README.md
+
+The example what GPT is able to do is here. I put the following requirement in to the spec (v2):
+```
+* When user click on \(LandingPage.searchButton.identifier) to open the list of repositories ask the user what is the name of Earth's star using \(AlertPage.name) page. Propose two answers as titles for \(AlertPage.defaultButton.identifier) and \(AlertPage.cancelButton.identifier) buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error.
+```
+And there is a video on how it is working: 
+
+I did not code any string, questions or logic in the app. The only thing is `AppSpec.swift` promt.
 
 There is an example of commnunication:
 <initial prompt>
@@ -291,15 +299,6 @@ Acceptable parameters: data to show alert
 }
 <end of parameters json representation>
 
-Application requirements:
-* Page LandingPage, component username_textfield: Validate entered username. Display an error alert if username is not valid.
-* If user tap on back button, page should be closed immediately.
-* App can use any supported GitHub API.
-* When user want to see list of repositories: show loading page and start the github api call to fetch list of repositories. When api response is received display the repositories page with required data.
-* The GitHub API response with list of repositories will include the user's repositories as an array of objects, with each object containing information about a single repository.
-* All loading pages should be closed before showing the next page.
-* All generated identifiers should contain some characters and random number
-
 Each your input will be one of the predefined events:
 * Name: AppUserInterationEvent
 Description: User interacted with application
@@ -356,6 +355,15 @@ Description: Call the REST api with provided parameters.
   "action" : "GPTApiCallAction"
 }
 <end of json representation>
+
+Application requirements:
+* When user click on search_button to open the list of repositories ask the user what is the name of Earth's star using AlertPage page. Propose two answers as titles for default_button and cancel_button buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error.
+* If user tap on back button, page should be closed immediately.
+* App can use any supported GitHub API.
+* When user want to see list of repositories: show loading page and start the github api call to fetch list of repositories. When api response is received display the repositories page with required data.
+* The GitHub API response with list of repositories will include the user's repositories as an array of objects, with each object containing information about a single repository.
+* All loading pages should be closed before showing the next page.
+* All generated identifiers should contain some characters and random number
 
 Process input in context of provided application requirements and generate json array of actions for the application. You should always generate array of action, even there is only one action is required. Example of output: '[{<data for action0>}, {<data for action1>}, {<data for action2>, ...}]'
 You should strictly follow the json representations of the actions, application will not be able to process unknown or invalid output.
