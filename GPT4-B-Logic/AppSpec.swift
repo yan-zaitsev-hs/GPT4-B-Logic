@@ -67,7 +67,8 @@ Your possible actions:
 * \(GPTApiCallAction.spec)
 
 Application requirements:
-* When user click on \(LandingPage.searchButton.identifier) to open the list of repositories ask the user what is the name of Earth's star using \(AlertPage.name) page. Propose two answers as titles for \(AlertPage.defaultButton.identifier) and \(AlertPage.cancelButton.identifier) buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error. Don't load list of repositoried until user answer the question!
+* When user click on \(LandingPage.searchButton.identifier) to open the list of repositories ask the user what is the name of Earth's star using \(AlertPage.name) page. Propose two answers as titles for \(AlertPage.defaultButton.identifier) and \(AlertPage.cancelButton.identifier) buttons. If answer is correct, procceed with initial request. If answer is wrong, show the error alert.
+* Don't load the list of repositories until user select the correct answer to the question above.
 * If user tap on back button, page should be closed immediately.
 * App can use any supported GitHub API.
 * When user want to see list of repositories: show loading page and start the github api call to fetch list of repositories. When api response is received display the repositories page with required data.
