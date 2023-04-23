@@ -16,6 +16,14 @@ struct AppUserInterationEvent {
 }
 
 extension AppUserInterationEvent: AppEvent {
+    var eventName: String {
+        return action
+    }
+
+    var description: String {
+        return "Page \(page): \(interation)."
+    }
+
     func createGPTMessage() -> Chat.Message {
         return .user(content: """
         Event='\(action)'

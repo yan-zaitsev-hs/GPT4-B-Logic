@@ -32,6 +32,10 @@ class GPT: ObservableObject {
     }
 
     func start() async {
+        let startPRequest = await GPTHelper.shared.gptStarted()
+        defer {
+            startPRequest.finish()
+        }
         do {
             guard let token = token else {
                 fatalError("No token or promt provided")
@@ -60,6 +64,10 @@ class GPT: ObservableObject {
     }
 
     func sendEvent(event: AppEvent, appState: AppState) async {
+        let eventPRequest = await GPTHelper.shared.addEvent(event)
+        defer {
+            eventPRequest.finish()
+        }
         do {
             guard let client = client else {
                 fatalError("No client started")
@@ -117,6 +125,7 @@ class GPT: ObservableObject {
 
         Task {
             do {
+                await GPTHelper.shared.addAction(name: action)
                 switch action {
                 case GPTOpenPageAction.name:
                     let action = try decoder.decode(GPTOpenPageAction.self, from: jsonData)

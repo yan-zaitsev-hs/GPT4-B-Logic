@@ -10,4 +10,7 @@ import OpenAIKit
 
 protocol AppEvent {
     func createGPTMessage() -> Chat.Message
+
+    var eventName: String { get }
+    var description: String { get }
 }

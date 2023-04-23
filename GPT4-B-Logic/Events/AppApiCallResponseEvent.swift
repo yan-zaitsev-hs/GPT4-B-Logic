@@ -15,6 +15,14 @@ struct AppApiCallResponseEvent {
 }
 //
 extension AppApiCallResponseEvent: AppEvent {
+    var eventName: String {
+        return action
+    }
+
+    var description: String {
+        return "Api response received. Size = \(response.count) bytes."
+    }
+
     func createGPTMessage() -> Chat.Message {
         return .system(content: """
         Event='\(action)'
